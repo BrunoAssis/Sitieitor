@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  event_id: 1
+  date_from: 2012-05-29 00:44:34
+  date_to: 2012-05-29 00:44:34
+
+two:
+  event_id: 1
+  date_from: 2012-05-29 00:44:34
+  date_to: 2012-05-29 00:44:34

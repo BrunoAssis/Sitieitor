@@ -1,0 +1,27 @@
+<h1>Listing possible_dates</h1>
+
+<table>
+  <tr>
+    <th>Event</th>
+    <th>Date from</th>
+    <th>Date to</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @possible_dates.each do |possible_date| %>
+  <tr>
+    <td><%= possible_date.event_id %></td>
+    <td><%= possible_date.date_from %></td>
+    <td><%= possible_date.date_to %></td>
+    <td><%= link_to 'Show', possible_date %></td>
+    <td><%= link_to 'Edit', edit_possible_date_path(possible_date) %></td>
+    <td><%= link_to 'Destroy', possible_date, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Possible date', new_possible_date_path %>

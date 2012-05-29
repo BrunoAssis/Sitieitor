@@ -1,4 +1,16 @@
 Sitieitor::Application.routes.draw do
+  resources :possible_dates
+
+  root to: "StaticPages#index"
+
+  match "about" => "StaticPages#about"
+
+  match "help" => "StaticPages#help"
+
+  resources :events
+
+  resources :places
+
   resources :users
 
   # The priority is based upon order of creation:
